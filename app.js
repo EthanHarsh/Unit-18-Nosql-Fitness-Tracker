@@ -1,4 +1,5 @@
 const express = require('express');
+const routeIndex = require('./routes/index')
 
 
 
@@ -11,6 +12,6 @@ app.use(express.urlencoded());
 
 
 //routes
-
+app.use('/', routeIndex);
 
 module.exports = app;

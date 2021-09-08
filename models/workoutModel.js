@@ -14,7 +14,8 @@ const workoutSchema = new mongoose.Schema({
     duration: Number,
     weight: Number,
     reps: Number,
-    sets: Number
+    sets: Number,
+    distance: Number
 });
 
 const Result = mongoose.model('Workout', workoutSchema);
