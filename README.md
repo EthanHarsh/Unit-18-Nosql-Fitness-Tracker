@@ -30,5 +30,5 @@ Track your fitness and reach your goals!
 
 - [Node.js Documentation](https://nodejs.org/en/docs/)
 - [Mongoose](https://mongoosejs.com/docs/api.html)
-- [MongoDB]](https://docs.mongodb.com/guides/)
+- [MongoDB](https://docs.mongodb.com/guides/)
 - **General Reference ->** [MDN](https://developer.mozilla.org/en-US/)
