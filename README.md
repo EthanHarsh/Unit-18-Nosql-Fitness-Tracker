@@ -3,7 +3,7 @@
 ![Node.js Badge](https://img.shields.io/badge/JavaScript-Node.js-green) ![CLI Badge](https://img.shields.io/badge/Node.js-CLI-green) ![MongoDB Badge](https://img.shields.io/badge/DB-MongoDB-blue) ![OSU Bootcamp Badge](https://img.shields.io/badge/OSU-Bootcamp-red)
 
 ## Deployment
-[Demo-Blog](https://fitness-tracker.ethanharsh.com/)
+[Fitness-Tracker](https://fitness-tracker.ethanharsh.com/)
 
 ## Application Screenshot
 
