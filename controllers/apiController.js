@@ -1,9 +1,11 @@
 const catchAsync = require('./../utils/catchAsync');
+const { totalDuration } = require('./../utils/totalDuration')
 const Workout = require('./../models/workoutModel');
 
 exports.getWorkouts = catchAsync(async (req, res, next) => {
-    const data = await Workout.find();
+    const workouts = await Workout.find();
 
+    const data = totalDuration(workouts);
     res.status(200).json({
         data
     })
@@ -12,23 +14,7 @@ exports.getWorkouts = catchAsync(async (req, res, next) => {
 exports.getWorkoutRange = catchAsync(async (req, res, next) => {
     const workouts = await Workout.find().sort([['day', -1]]).limit(7);
     console.log('workoutRangne')
-    let x = 0;
-    let data = [];
-    for (session of workouts) {
-        let totalDuration = 0;
-        let ex = JSON.stringify(session)
-        ex = JSON.parse(ex);
-        //console.log(ex.exercises[0].duration)
-
-        for (tech of ex.exercises) {
-            //console.log(tech.duration);
-            totalDuration = totalDuration + tech.duration
-        }
-        ex.totalDuration = totalDuration;
-        console.log(ex)
-        data.push(ex);
-        x++;
-    }
+    const data = totalDuration(workouts);
     res.status(200).json({
         data
     })
